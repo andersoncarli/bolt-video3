@@ -1,0 +1,24 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+  .h1 {
+    @apply text-3xl font-bold mb-4;
+  }
+  .h2 {
+    @apply text-2xl font-semibold mb-3;
+  }
+  .btn {
+    @apply px-4 py-2 rounded-md text-white transition-colors duration-300;
+  }
+  .btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700;
+  }
+  .input {
+    @apply w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600;
+  }
+  .sidebar-link {
+    @apply block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white;
+  }
+}
